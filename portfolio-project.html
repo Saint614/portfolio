@@ -13,70 +13,83 @@
 
     </head>
     <body>
-        <div clas="container">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row row-content align-items-center">
                 <div class="col">
-                    <h1>Joshua St. Laurent</h1>
-                    <h2>About me</h2>
-                <div class="col">    
-                    <img src="images/me.jpg" alt="This is a profile picture of a very handsome man">
+                    <div class="align-self-center"> 
+                        <h1>Joshua St. Laurent</h1>
+                        <h2>About me</h2>
+                    </div>
+                </div>
+                <div class="d-flex">    
+                    <img class="rounded mx-auto d-block" src="images/me.jpg" alt="This is a profile picture of a very handsome man">
+                    <div class="align-self-center">
+                        <div class="col"> 
+                        <p>Hello Everyone!  My name is Joshua St. Laurent and I am an aspiring full stack developer. Although at this point my experience is minimal, I believe that I have the drive and work ethic to be constantly learning and bettering myself.  I hope to be able to continue to update this page as I learn more and more.</p>
+                        </div>
+                    </div>
+
                 </div>   
-                <div class="col"> 
-                    <p>Hello Everyone!  My name is Joshua St. Laurent and I am an aspiring full stack developer. Although at this point my experience is minimal, I believe that I have the drive and work ethic to be constantly learning and bettering myself.  I hope to be able to continue to update this page as I learn more and more.</p>
-                </div>
+                
             </div>
             <div class="row">
                 <div class="col">
-                <h2>Education</h2>
+                <h2 class="wbg">Education</h2>          
+                
+                <div class="row row-content">
+                    <div class="table-sm">
+                        <table class="table bg-dark">
+                            <tr class="table-success">
+                                <td>Bridgewater State University</td>
+                                <td>Bachelor of Arts in History</td>
+                                <td>2015</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
 
-                
-
-                <table class="table1">
-                    <tr>
-                        <th>Bridgewater State University</th>
-                        <th>Bachelor of Arts in History</th>
-                        <th>2015</th>
-                    </tr>
-                </table>
             </div>
-            <section>
-                <h2>Professional Background</h2>
-                <table >
-                    <tr>
-                        <th>Company</th>
-                        <th>Position</th>
-                        <th>Years</th>
-                    </tr>
-                    <tr>
-                        <td>Travelers Insurance Companies</td>
-                        <td>Subrogation Claim Professional</td>
-                        <td>2016-present</td>
-    
-                    </tr>
-                    <tr>
-                        <td>Preservation Society of Newport County</td>
-                        <td>Team Leader</td>
-                        <td>2015-2016</td>
-    
-                    </tr>
-                    <tr>
-                        <td>Preservation Society of Newport County</td>
-                        <td>Tour Guide/Host 12</td>
-                        <td>2012-2015</td>
-                    </tr>
-                </table>
-            </section>
+            <div class="row">
+                <div class="table-sm">
+                    <h2 class="wbg">Professional Background</h2>
+                    <table class="table bg-dark text-light" >
+                        <tr class="bg-light text-dark">
+                            <th>Company</th>
+                            <th>Position</th>
+                            <th>Years</th>
+                        </tr>
+                        <tr >
+                            <td>Travelers Insurance Companies</td>
+                            <td>Subrogation Claim Professional</td>
+                            <td>2016-present</td>
+        
+                        </tr>
+                        <tr>
+                            <td>Preservation Society of Newport County</td>
+                            <td>Team Leader</td>
+                            <td>2015-2016</td>
+        
+                        </tr>
+                        <tr>
+                            <td>Preservation Society of Newport County</td>
+                            <td>Tour Guide/Host 12</td>
+                            <td>2012-2015</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
             
         <footer>
-            <h2>Contact Me</h2>
-            <div>
-                <ul>
-                    <li>Email: Jstl35@comcast.net</li>
-                    <li>Phone: (508)837-7843</li>
-                    <li>linkedin: <a href="https://www.linkedin.com/in/joshua-st-laurent-02b273139/" target="_blank">My LinkedIn</a></li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center text-light">
+                        <h2>Contact Me</h2>                       
+                        <i class="fa-solid fa-envelope fa-lg text-success"></i> Jstl35@comcast.net <br>
+                        <i class="fa-solid fa-phone fa-lg text-success" ></i> (508)837-7843 <br>
+                        <a href="https://www.linkedin.com/in/joshua-st-laurent-02b273139/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" ></i>  </a>                         
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
