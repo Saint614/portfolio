@@ -18,7 +18,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="align-self-center"> 
-                            <h1>Joshua St. Laurent</h1>                            
+                            <!-- This will eventually lead to my website, can't figure out how to remove underline, tried using css text-decoration:none -->
+                            <a href="#" target="_blank"><h1>Joshua St. Laurent</h1> </a>                            
                         </div>
                     </div>
                 </div>
@@ -26,7 +27,11 @@
         </header>
         <nav class="navbar navbar expand-sm navbar-dark bg-dark sticky-top">
                 <div class="container">
-                    <a class="navbar-brand" href="https://www.linkedin.com/in/joshua-st-laurent-02b273139/" target="_blank">Joshua St.Laurent</a>
+                    <a class="navbar-brand" href="https://www.linkedin.com/in/joshua-st-laurent-02b273139/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" ></i></a>
+                    <a class="navbar-brand" href="https://twitter.com/saintdev614" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i> </a>
+                    <a class="navbar-brand" href="https://github.com/Saint614" target="_blank"><i class="fa-brands fa-github fa-2xl"></i> </a>
+                    <a class="navbar-brand" href="https:/codepen.io/Saint614" target="_blank"><i class="fa-brands fa-codepen fa-2xl"></i> </a>
+
                 </div>
                 
 
@@ -62,36 +67,87 @@
             </div>
             <div class="row">
                 <div class="col">
-                <h2 class="wbg">Education</h2>          
+                    <ul class="nav nav-tabs justify-content-center">
+                        <li class="nav-item"><a class="nav-link active" href="#ed" role="tab" data-bs-toggle="tab">Education</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#tic" role="tab" data-bs-toggle="tab">2016-Present</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#presleader" role="tab" data-bs-toggle="tab">2015-2016</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#presguide" role="tab" data-bs-toggle="tab">2012-2015</a> </li>
+                        
+                        
+                        
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#drop" role="button">Professional Background</a>
+                            <ul class="dropdown-menu" id="drop">
+                                <li><a class="dropdown-item" href="#tic">2016-Present</a> </li>
+                                <li><a class="dropdown-item" href="#presleader">2015-2016</a> </li>
+                                <li><a class="dropdown-item" href="#presguide">2012-2015</a></li>
+                            </ul>
+                        </li>                           -->
+                    </ul>                  
                 </div>
-                <div class="row row-content">
-                    <div class="table-sm">
-                        <table class="table bg-dark">
-                            <tr class="table-success">
-                                <td>Bridgewater State University</td>
-                                <td>Bachelor of Arts in History</td>
-                                <td>2015</td>
-                            </tr>
-                        </table>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade" id="ed">
+                        <div class="table-sm">
+                            <table class="table bg-dark">
+                                <tr class="table-success">
+                                    <td>Bridgewater State University</td>
+                                    <td>Bachelor of Arts in History</td>
+                                    <td>2015</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>  
+                    <div role="tabpanel" class="tab-pane fade" id="tic">
+                        <div class="table-sm">
+                            <table class="table bg-dark text-light" >
+                                <tr class="bg-light text-dark">
+                                    <th>Company</th>
+                                    <th>Position</th>                                   
+                                </tr>
+                                <tr >
+                                    <td>Travelers Insurance Companies</td>
+                                    <td>Subrogation Claim Professional</td>                                             
+                                </tr>
+                            </table>
+                        </div>
                     </div>
+                    <div role="tabpanel" class="tab-pane fade" id="presleader">
+                        <div class="table-sm">
+                            <table class="table bg-dark text-light" >
+                                <tr class="bg-light text-dark">
+                                    <th>Company</th>
+                                    <th>Position</th>                                   
+                                </tr>
+                                <tr >
+                                    <td>Preservation Society of Newport County</td>
+                                    <td>Team Leader</td>                                             
+                                </tr>
+                            </table>
+                        </div>
+                    </div>     
+                    <div role="tabpanel" class="tab-pane fade " id="presguide">
+                        <div class="table-sm">
+                            <table class="table bg-dark text-light" >
+                                <tr class="bg-light text-dark">
+                                    <th>Company</th>
+                                    <th>Position</th>                                   
+                                </tr>
+                                <tr >
+                                    <td>Preservation Society of Newport County</td>
+                                    <td>Tour Guide/Host 12</td>                                             
+                                </tr>
+                            </table>
+                        </div>                        
+                    </div>                
+                    <!-- <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#pro">Clear</button> -->
                 </div>
-
             </div>
-            <div class="row">
+
+            
+            <!-- <div class="row">
                 <div class="table-sm">
                     <h2 class="wbg">Professional Background</h2>
-                    <table class="table bg-dark text-light" >
-                        <tr class="bg-light text-dark">
-                            <th>Company</th>
-                            <th>Position</th>
-                            <th>Years</th>
-                        </tr>
-                        <tr >
-                            <td>Travelers Insurance Companies</td>
-                            <td>Subrogation Claim Professional</td>
-                            <td>2016-present</td>
-        
-                        </tr>
+                    
                         <tr>
                             <td>Preservation Society of Newport County</td>
                             <td>Team Leader</td>
@@ -104,8 +160,8 @@
                             <td>2012-2015</td>
                         </tr>
                     </table>
-                </div>
-            </div>
+                </div> -->
+            
         </main>
             
         <footer>
@@ -115,7 +171,7 @@
                         <h2>Contact Me</h2>                       
                         <a  href="mailto:jstl35@comcast.net"><i class="fa-solid fa-envelope fa-lg text-success"></i></a> Jstl35@comcast.net <br>
                         <i class="fa-solid fa-phone fa-lg text-success" ></i> (508)837-7843 <br>
-                        <a href="https://www.linkedin.com/in/joshua-st-laurent-02b273139/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" ></i>  </a>                         
+                        <!-- <a href="https://www.linkedin.com/in/joshua-st-laurent-02b273139/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" ></i>  </a>                          -->
                     </div>
                 </div>
             </div>
