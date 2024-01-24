@@ -21,6 +21,10 @@
                             <!-- This will eventually lead to my website, can't figure out how to remove underline, tried using css text-decoration:none -->
                             <a href="#" target="_blank"><h1>Joshua St. Laurent</h1> </a>                            
                         </div>
+                        
+                    </div>
+                    <div class="col-3">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal" class="btn btn-sm bg-primary text-warning text-no-wrap">Join Newsletter</button>
                     </div>
                 </div>
             </div>
@@ -32,11 +36,48 @@
                     <a class="navbar-brand" href="https://github.com/Saint614" target="_blank"><i class="fa-brands fa-github fa-2xl"></i> </a>
                     <a class="navbar-brand" href="https:/codepen.io/Saint614" target="_blank"><i class="fa-brands fa-codepen fa-2xl"></i> </a>
 
-                </div>
-                
-
-
+                </div>           
         </nav>
+        <div id="newsletterModal" class="modal fade">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-warning">
+                        <h3 class="modal-title">Join my Newsletter</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post" id="newsletterForm">
+                                <div class="row">
+                                    <div class="mb-3 col-12">
+                                        <label class="sr-only" for="newsletterEmail">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="newsletterEmail" name="newsletterEmail" placeholder="Enter your email">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="newsletterPermission" name="newsletterPermission">
+                                            <label class="form-check-label">Agree to sign up for newsletter</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Complete Signup</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
         <main class="container-fluid">
             <div class="row row-content align-items-center">
                 <div class="col">
@@ -54,7 +95,8 @@
                         
                     </div>
                     <div class="col-12 col-md-3 align-self-center">
-                        <div class="btn-group-vertical" role="group">                            
+                        <div class="btn-group-vertical" role="group">  
+
                             <button type="button" class="btn btn-primary ">My Work</button> 
                       
                             <button type="button" class="btn btn-info">My Resume</button>
