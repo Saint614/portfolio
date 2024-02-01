@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "My portfolio project",
+  "source": "portfolio-project.html",
+  "scripts": {
+    "start": "parcel --open",
+    "build": "parcel build"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saint614/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saint614/portfolio/issues"
+  },
+  "homepage": "https://github.com/Saint614/portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "bootstrap": "^5.2.3"
+  }
+}
